@@ -1,0 +1,66 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 34 42% 91%;
+    --foreground: 215 19% 35%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 214 52% 25%;
+    --primary-foreground: 210 40% 99%;
+    --secondary: 214 32% 95%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 214 32% 95%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 214 32% 95%;
+    --accent-foreground: 214 52% 25%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 90%;
+    --input: 214 32% 90%;
+    --ring: 217 91% 61%;
+    --radius: 0.5rem;
+    --chart-1: 214 52% 25%;
+    --chart-2: 217 91% 61%;
+    --chart-3: 45 58% 55%;
+    --chart-4: 215 19% 45%;
+    --chart-5: 214 32% 75%;
+    --sidebar-background: 34 42% 91%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 214 52% 25%;
+    --sidebar-primary-foreground: 210 40% 99%;
+    --sidebar-accent: 214 32% 95%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 90%;
+    --sidebar-ring: 217 91% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body leading-relaxed antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight text-brand-heading;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(30, 58, 95, 0.08);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.gold-text {
+  color: #3a86ff;
+}

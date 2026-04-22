@@ -1,0 +1,23 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-dashboard",
+      "description": "Premium dark mode financial dashboard",
+      "imageUrl": "https://picsum.photos/seed/atlas1/1200/800",
+      "imageHint": "finance dashboard"
+    },
+    {
+      "id": "entity-graph",
+      "description": "Abstract network graph of ownership",
+      "imageUrl": "https://picsum.photos/seed/atlas2/800/600",
+      "imageHint": "network graph"
+    },
+    {
+      "id": "global-map",
+      "description": "Minimalist world map with connections",
+      "imageUrl": "https://picsum.photos/seed/atlas3/1200/600",
+      "imageHint": "world connections"
+    }
+  ]
+}
