@@ -15,7 +15,7 @@ The **Next.js application** lives in [`atlas-main/`](atlas-main/). It is a multi
 - **Forms & CTAs** — Early-access interest, contact, and login UI (front-end flows; wire your own backend as needed).
 - **Design system** — Tailwind CSS, shared layout (`Navigation`, `Footer`), and **shadcn/ui**-style primitives under [`atlas-main/src/components/ui/`](atlas-main/src/components/ui/).
 
-Product intent is summarized in [`atlas-main/docs/blueprint.md`](atlas-main/docs/blueprint.md) (original design brief).
+A local design brief may live at `atlas-main/docs/blueprint.md` on your machine; the `docs/` tree is gitignored and not part of the shared repo.
 
 ---
 
@@ -71,8 +71,7 @@ atlas-main/
 │   ├── ai/               # Genkit config, dev entry, flows
 │   ├── hooks/
 │   └── lib/
-├── docs/
-│   └── blueprint.md      # Product/design brief
+├── docs/                 # optional local notes (gitignored)
 ├── next.config.ts
 ├── tailwind.config.ts
 └── package.json
