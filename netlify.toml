@@ -1,0 +1,10 @@
+[build]
+  base    = "atlas-main"
+  command = "npm run build"
+  # Publish directory: leave unset – @netlify/plugin-nextjs handles deployment
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
