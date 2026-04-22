@@ -4,85 +4,54 @@ import { ArrowRight } from "lucide-react";
 
 export default function CTA() {
   return (
-    <section className="py-32 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="py-24 px-6" style={{ background: "#f8f7f4" }}>
+      <div className="max-w-3xl mx-auto text-center">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-sm p-16 relative overflow-hidden"
-          style={{
-            border: "1px solid rgba(201,168,76,0.2)",
-            background: "#0d0d0f",
-          }}
+          className="rounded-2xl p-14 relative overflow-hidden"
+          style={{ background: "#1a2744" }}
         >
-          {/* Glow */}
-          <div
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 opacity-30 blur-3xl pointer-events-none"
-            style={{ background: "radial-gradient(ellipse, #c9a84c, transparent)" }}
-          />
-          <div
-            className="absolute top-0 left-0 right-0 h-px"
+          <div className="absolute inset-0 opacity-10"
             style={{
-              background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.5), transparent)",
+              backgroundImage: "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)",
+              backgroundSize: "28px 28px",
             }}
           />
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="font-mono text-xs tracking-widest uppercase mb-6"
-            style={{ color: "#c9a84c" }}
-          >
-            Private Beta
-          </motion.div>
+          <div className="relative">
+            <div className="text-xs font-mono font-medium tracking-widest uppercase mb-4" style={{ color: "#b5882a" }}>
+              Private Beta
+            </div>
+            <h2 className="font-display text-4xl md:text-5xl leading-tight mb-5" style={{ color: "#fff", letterSpacing: "-0.02em" }}>
+              Ready to see the{" "}
+              <span style={{ color: "#d4a843", fontStyle: "italic" }}>full picture?</span>
+            </h2>
+            <p className="text-base mb-10 max-w-md mx-auto" style={{ color: "rgba(255,255,255,0.55)" }}>
+              Atlas is currently in private beta. Apply for early access and be among the first
+              to experience a truly comprehensive wealth operating system.
+            </p>
 
-          <h2
-            className="font-display text-5xl md:text-6xl leading-tight mb-6"
-            style={{ color: "#e4e4e7" }}
-          >
-            Ready to see the
-            <span className="text-gold-gradient italic block">
-              full picture?
-            </span>
-          </h2>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="#"
+                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg text-sm font-semibold transition-all duration-150 hover:opacity-95"
+                style={{ background: "#b5882a", color: "#fff" }}>
+                Apply for Early Access <ArrowRight size={15} />
+              </a>
+              <a href="#" className="text-sm font-medium" style={{ color: "rgba(255,255,255,0.45)" }}>
+                Schedule a demo →
+              </a>
+            </div>
 
-          <p className="text-base mb-10 max-w-lg mx-auto" style={{ color: "#71717a" }}>
-            Atlas is currently in private beta. Apply for early access and 
-            be among the first to experience a truly comprehensive wealth operating system.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#"
-              className="group flex items-center gap-2 px-10 py-4 rounded-sm font-medium tracking-wide transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_50px_rgba(201,168,76,0.3)]"
-              style={{
-                background: "linear-gradient(135deg, #c9a84c, #e8c97a)",
-                color: "#09090b",
-              }}
-            >
-              Apply for Early Access
-              <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-            </a>
-            <a
-              href="#"
-              className="text-sm"
-              style={{ color: "#52525b" }}
-            >
-              Schedule a demo instead →
-            </a>
-          </div>
-
-          <div className="mt-10 flex items-center justify-center gap-8">
-            {["No credit card required", "Setup in minutes", "Cancel anytime"].map(
-              (text) => (
-                <div key={text} className="flex items-center gap-2 text-xs" style={{ color: "#3f3f46" }}>
-                  <div className="w-1 h-1 rounded-full" style={{ background: "#3f3f46" }} />
+            <div className="mt-10 flex items-center justify-center gap-8">
+              {["No credit card required", "Setup in minutes", "Cancel anytime"].map((text) => (
+                <div key={text} className="flex items-center gap-1.5 text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>
+                  <div className="w-1 h-1 rounded-full" style={{ background: "rgba(255,255,255,0.3)" }} />
                   {text}
                 </div>
-              )
-            )}
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
